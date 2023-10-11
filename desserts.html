@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Slice</title>
+    <link rel="icon" type="image/x-icon" href="./logo/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/b06605e970.js" crossorigin="anonymous"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="scripts/services/payment.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/new.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container split1 " style="right: 37px; height: 115px;">
+
+        <h1 class="header" id="header"><img src="./logo/logo.png" height="40px">Home Slice</h1>
+        <a href="#" style="color: black; text-decoration: none; position: relative;left: 605px; bottom: 45px; margin-bottom: 0px;">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Ordering for Delivery to ROHTAK ROAD</span>
+        </a>
+        <div class="vr" style="position: relative; left: 610px; bottom: 40px; width: 2px; height: 25px;"></div>
+        <a href="#" style="color: black; text-decoration:wavy; position: relative; left: 620px; bottom: 45px;">
+            <i class="fa-regular fa-clock"></i>
+            <span>ASAP
+            </span>
+        </a>
+        <div class="row" style="position: relative; bottom: 27px;">
+            <hr class="" style="margin: 0px;">
+            <div class="col-1 text-center border" style=" width: 115px;">
+                <a href="./index.html">Deals</a>
+            </div>
+            <div class="col-1 text-center border" style="width: 115px;">
+                <a href="./pizza.html">Pizzas</a>
+            </div>
+            <div class="col-1 text-center border" style="width: 115px;">
+                <a href="./sides.html">Sides</a>
+            </div>
+            <div class="col-1 text-center border" style="width: 115px; background-color:brown;">
+                <a href="./desserts.html">Desserts</a>
+            </div>
+            <div class="col-1 text-center border" style="width: 115px;">
+                <a href="./drinks.html">Drinks</a>
+            </div>
+            <label class="switch">
+                <span class="" style="position: relative; left: 245px; font-weight: 600;">Vegetarian</span>
+                <input type="checkbox">                
+                <span class="slider round"></span>
+              </label>
+        </div>
+    </div>
+
+    <div id="cart" class="split right border ">
+        <h1 class="basket">Your Basket</h1>
+        <div id="cart">
+            <ul id="cart-items">
+                <!-- Cart items will be added here -->
+            </ul>
+            <div id="cart-total">
+                Total: ₹0
+            </div>
+        </div>
+        <div class="w3-container border">
+            <button onclick="payNow(29900)">Checkout</button>
+        </div>
+    </div>
+    <section id="section-1" class="mt-2">
+        <div class="container " style="background-color: aliceblue;">
+            <div class="row ">
+                <div class="product" style="width: 233px; height: 305px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px; background-color: #fff;">
+                    <img src="./desserts-images/1.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 20px;">Brow-wow-nie</h5>
+                        <span class="tag ml-5" style="position: relative;left:115px;bottom: 42px;">NEW</span>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:115px;bottom: 42px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-veg-india.62d469617f447d188e522217c36f433c.svg" style="position: relative;left: 0px; bottom:2px;">
+                            </span>
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; margin-top: 35px; font-weight: 400; color: grey;position: relative; right: 50px;bottom: 70px;">A divine choco brownie for your all time chocolate cravings</span>
+
+                        </div>
+                        <p style="display: none;">Price: ₹99</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 35px; width: 105%;text-align: center; position: relative;top: -68px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 40px;">₹99</span>
+                    </button>
+                </div>
+                <div class="product" style="width: 233px; height: 305px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px; background-color: #fff;">
+                    <img src="./desserts-images/2.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 20px;">Choco Volcano</h5>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:115px;bottom: 42px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-veg-india.62d469617f447d188e522217c36f433c.svg" style="position: relative;left: 0px; bottom:2px;">
+                            </span>
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; margin-top: 35px; font-weight: 400; color: grey;position: relative; right: 55px;bottom: 70px;">Warm choco cake with gooey center</span>
+                        </div>
+                        <p style="display: none;">Price: ₹119</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 35px; width: 105%;text-align: center; position: relative;top: -48px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 35px;">₹119</span>
+                    </button>
+                </div>
+                <div class="product" style="width: 233px; height: 305px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px; background-color: #fff;">
+                    <img src="./desserts-images/3.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 20px;">Oreo Tub</h5>
+                        <span class="tag ml-5" style="position: relative;left:75px;bottom: 42px;">NEW</span>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:75px;bottom: 42px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-veg-india.62d469617f447d188e522217c36f433c.svg" style="position: relative;left: 0px; bottom:2px;">
+                            </span>
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; margin-top: 35px; font-weight: 400; color: grey;position: relative; right: 55px;bottom: 70px;">Oreo Tub (100 ml)</span>
+                        </div>
+                        <p style="display: none;">Price: ₹285</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 35px; width: 105%;text-align: center; position: relative;top: -27px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 40px;">₹285</span>
+                    </button>
+                </div>
+                <div class="product" style="width: 233px; height: 305px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px; background-color: #fff;">
+                    <img src="./desserts-images/4.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 20px;">Desi Kulfi</h5>
+                        <span class="tag ml-5" style="position: relative;left:75px;bottom: 42px;">NEW</span>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:75px;bottom: 42px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-veg-india.62d469617f447d188e522217c36f433c.svg" style="position: relative;left: 0px; bottom:2px;">
+                            </span>
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; margin-top: 35px; font-weight: 400; color: grey;position: relative; right: 55px;bottom: 70px;">Desi Kulfi (100 ml)</span>
+                        </div>
+                        <p style="display: none;">Price: ₹57</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 35px; width: 105%;text-align: center; position: relative;top: -27px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 40px;">₹57</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

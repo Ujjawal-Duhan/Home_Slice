@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Slice</title>
+    <link rel="icon" type="image/x-icon" href="./logo/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/b06605e970.js" crossorigin="anonymous"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="scripts/services/payment.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/new.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container split1 " style="right: 37px; height: 115px;">
+
+        <h1 class="header" id="header"><img src="./logo/logo.png" height="40px">Home Slice</h1>
+        <a href="#" style="color: black; text-decoration: none; position: relative;left: 605px; bottom: 45px; margin-bottom: 0px;">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Ordering for Delivery to ROHTAK ROAD</span>
+        </a>
+        <div class="vr" style="position: relative; left: 610px; bottom: 40px; width: 2px; height: 25px;"></div>
+        <a href="#" style="color: black; text-decoration:wavy; position: relative; left: 620px; bottom: 45px;">
+            <i class="fa-regular fa-clock"></i>
+            <span>ASAP
+            </span>
+        </a>
+        <div class="row" style="position: relative; bottom: 27px;">
+            <hr class="" style="margin: 0px;">
+            <div class="col-1 text-center border" style=" width: 115px;">
+                <a href="./index.html">Deals</a>
+            </div>
+            <div class="col-1 text-center border" style="width: 115px; background-color:brown;">
+                <a href="./pizza.html">Pizzas</a>
+            </div>
+            <div class="col-1 text-center border" style="width: 115px;">
+                <a href="./sides.html">Sides</a>
+            </div>
+            <div class="col-1 text-center border" style="width: 115px;">
+                <a href="./desserts.html">Desserts</a>
+            </div>
+            <div class="col-1 text-center border" style="width: 115px;">
+                <a href="./drinks.html">Drinks</a>
+            </div>
+            <label class="switch">
+                <span class="" style="position: relative; left: 245px; font-weight: 600;">Vegetarian</span>
+                <input type="checkbox">                
+                <span class="slider round"></span>
+              </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <h2 class="hr-lines"> newly launched </h2>
+    </div>
+    <div id="cart" class="split right border ">
+        <h1 class="basket">Your Basket</h1>
+        <div id="cart">
+            <ul id="cart-items">
+                <!-- Cart items will be added here -->
+            </ul>
+            <div id="cart-total">
+                Total: ₹0
+            </div>
+        </div>
+        <div class="w3-container border">
+            <button onclick="payNow(29900)">Checkout</button>
+        </div>
+    </div>
+    <section id="section-1">
+        <div class="container " style="background-color: aliceblue;">
+            <div class="row ">
+                <div class="product" style="width: 229px; height: 500px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px;background-color: #fff;">
+                    <img src="./pizza-images/1.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 40px;">Schezwan Margherita</h5>
+                        <span class="tag ml-5" style="position: relative;left:168px;bottom: 63px;">NEW</span>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:135px;bottom: 64px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-veg-india.62d469617f447d188e522217c36f433c.svg" style="position: relative;right: 170px; bottom:-23px;">
+                            </span>
+                        </span>
+                        <span class="flex font-light mr-5">
+                            <img src="https://www.pizzahut.co.in/order/images/icons/icon-mild.b167306b5b1794ba97a58adfd1e3031a.svg" style="width: 18px; position: relative; right: 35px;bottom: 39px;">   
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; margin-top: 35px; font-weight: 400; color: grey;position: relative; right:50px;bottom: 60px;">Your very own Margherita, now with a spicy twist! Loaded with our signature spicy schezwan sauce & 100% mozzarella cheese.</span>
+                        </div>
+                        <ul>
+                            <li class="list-group-item" style="font-size: 14px; font-weight: 450; color: black;position:relative; right: 30px;top: -5px;">Select your size & crust</li>
+                            <li class="list-group-item" style="background-color:lightgrey; margin-top: 10px;position: relative;text-align:left;padding-left: 5px; width: 200px;top: -10px; right: 30px;">Medium Pan</li>
+                        </ul>
+                        <p style="display: none;">Price: ₹389</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 28px; width: 105%;text-align: center; position: relative;bottom: 20px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 35px;">₹389</span>
+                    </button>
+                </div>
+                <div class="product" style="width: 229px; height: 500px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px;background-color: #fff;">
+                    <img src="./pizza-images/2.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 40px;">Mazedar Makhni Paneer</h5>
+                        <span class="tag ml-5" style="position: relative;left:-5px;bottom: 39px;">NEW</span>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:165px;bottom: 64px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-veg-india.62d469617f447d188e522217c36f433c.svg" style="position: relative;right: 170px; bottom:-23px;">
+                            </span>
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; margin-top: 35px; font-weight: 400; color: grey;position: relative; right:50px;bottom: 60px;">A treat for all makhni lovers. Spiced paneer, onion, juicy red bell peppers with our new flavourful makhni sauce, topped with 100% mozzarella cheese and buttery spice sprinkle.</span>
+                        </div>
+                        <ul>
+                            <li class="list-group-item" style="font-size: 14px; font-weight: 450; color: black;position:relative; right: 30px;top: -45px;">Select your size & crust</li>
+                            <li class="list-group-item" style="background-color:lightgrey; margin-top: 10px;position: relative;text-align:left;padding-left: 5px; width: 200px;top: -50px; right: 30px;">Medium Pan</li>
+                        </ul>
+                        <p style="display: none;">Price: ₹609</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 28px; width: 105%;text-align: center; position: relative;bottom: 60px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 35px;">₹609</span>
+                    </button>
+                </div>
+                <div class="product" style="width: 229px; height: 500px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px;background-color: #fff;">
+                    <img src="./pizza-images/3.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 40px;">Awesome American Cheesy</h5>
+                        <span class="tag ml-5" style="position: relative;left:58px;bottom: 63px;">NEW</span>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:230px;bottom: 89px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-veg-india.62d469617f447d188e522217c36f433c.svg" style="position: relative;right: 170px; bottom:-23px;">
+                            </span>
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; margin-top: 15px; font-weight: 400; color: grey;position: relative; right:50px;bottom: 60px;">Our divine peruvian flavoured cheesy sauce, topped with sweet corn, green capsicum, red paprika and 100% mozzarella cheese, finished with a generous drizzle of texas garlic sauce.</span>
+                        </div>
+                        <ul>
+                            <li class="list-group-item" style="font-size: 14px; font-weight: 450; color: black;position:relative; right: 30px;top: -65px;">Select your size & crust</li>
+                            <li class="list-group-item" style="background-color:lightgrey; margin-top: 10px;position: relative;text-align:left;padding-left: 5px; width: 200px;top: -70px; right: 30px;">Medium Pan</li>
+                        </ul>
+                        <p style="display: none;">Price: ₹609</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 28px; width: 105%;text-align: center; position: relative;bottom: 80px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 35px;">₹609</span>
+                    </button>
+                </div>
+                <div class="product" style="width: 229px; height: 500px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px;background-color: #fff;">
+                    <img src="./pizza-images/4.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 40px;">Ultimate Tandoori Veggie</h5>
+                        <span class="tag ml-5" style="position: relative;left:0px;bottom: 43px;">NEW</span>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:170px;bottom: 68px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-veg-india.62d469617f447d188e522217c36f433c.svg" style="position: relative;right: 170px; bottom:-23px;">
+                            </span>
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; margin-top: 5px; font-weight: 400; color: grey;position: relative; right:50px;bottom: 50px;">An ultimate combination of your favourite veggies- onion, green capsicum, mushroom, tomato, spicy jalapeno on tandoori sauce, topped with 100% mozzarella cheese & generous drizzle of mint mayo.</span>
+                        </div>
+                        <ul>
+                            <li class="list-group-item" style="font-size: 14px; font-weight: 450; color: black;position:relative; right: 30px;top: -55px;">Select your size & crust</li>
+                            <li class="list-group-item" style="background-color:lightgrey; margin-top: 10px;position: relative;text-align:left;padding-left: 5px; width: 200px;top: -60px; right: 30px;">Medium Pan</li>
+                        </ul>
+                        <p style="display: none;">Price: ₹609</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 28px; width: 105%;text-align: center; position: relative;bottom: 70px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 35px;">₹609</span>
+                    </button>
+                </div>
+                <div class="product" style="margin-top: 10px; width: 229px; height: 500px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px;background-color: #fff;">
+                    <img src="./pizza-images/5.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 40px;">Mexican Fiesta</h5>
+                        <span class="tag ml-5" style="position: relative;left:118px;bottom: 63px;">NEW</span>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:290px;bottom: 89px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-veg-india.62d469617f447d188e522217c36f433c.svg" style="position: relative;right: 170px; bottom:-23px;">
+                            </span>
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; margin-top: 35px; font-weight: 400; color: grey;position: relative; right:50px;bottom: 80px;">Flavourful mix of red capsicum, green capsicum, jalapeno, onion, black olives, sweet corn and 100% mozzarella Cheese with a signature spice sprinkle & our flavourful pan sauce.</span>
+                        </div>
+                        <ul>
+                            <li class="list-group-item" style="font-size: 14px; font-weight: 450; color: black;position:relative; right: 30px;top: -65px;">Select your size & crust</li>
+                            <li class="list-group-item" style="background-color:lightgrey; margin-top: 10px;position: relative;text-align:left;padding-left: 5px; width: 200px;top: -70px; right: 30px;">Medium Pan</li>
+                        </ul>
+                        <p style="display: none;">Price: ₹539</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 28px; width: 105%;text-align: center; position: relative;bottom: 80px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 35px;">₹539</span>
+                    </button>
+                </div>
+                <div class="product" style="margin-top: 10px; width: 229px; height: 500px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px;background-color: #fff;">
+                    <img src="./pizza-images/6.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 40px;">Cheezy Mushroom Magic</h5>
+                        <span class="tag ml-5" style="position: relative;left:0px;bottom: 39px;">NEW</span>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:170px;bottom: 64px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-veg-india.62d469617f447d188e522217c36f433c.svg" style="position: relative;right: 170px; bottom:-23px;">
+                            </span>
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; margin-top: 35px; font-weight: 400; color: grey;position: relative; right:50px;bottom: 72px;">A new combination with creamy mushroom sauce, chunky black olives, spicy jalapeno, juicy sweet corn, mushroom and 100% mozzarella cheese with garlic sprinkle for extra flavour hit.</span>
+                        </div>
+                        <ul>
+                            <li class="list-group-item" style="font-size: 14px; font-weight: 450; color: black;position:relative; right: 30px;top: -65px;">Select your size & crust</li>
+                            <li class="list-group-item" style="background-color:lightgrey; margin-top: 10px;position: relative;text-align:left;padding-left: 5px; width: 200px;top: -70px; right: 30px;">Medium Pan</li>
+                        </ul>
+                        <p style="display: none;">Price: ₹539</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 28px; width: 105%;text-align: center; position: relative;bottom: 80px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 35px;">₹539</span>
+                    </button>
+                </div>
+                <div class="product" style="margin-top: 10px; width: 229px; height: 500px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px;background-color: #fff;">
+                    <img src="./pizza-images/7.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 40px;">Sizzling Schezwan Chicken</h5>
+                        <span class="tag ml-5" style="position: relative;left:0px;bottom: 40px;">NEW</span>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:230px;bottom: 89px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-non-veg-india.8b504def46b1471c0b39961124b6d58c.svg" style="position: relative;right: 230px; bottom:-47px;">
+                            </span>
+                        </span>
+                        <span class="flex font-light mr-5">
+                            <img src="https://www.pizzahut.co.in/order/images/icons/icon-mild.b167306b5b1794ba97a58adfd1e3031a.svg" style="width: 18px; position: relative; right: 0px;bottom: 39px;">   
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; margin-top: 75px; font-weight: 400; color: grey;position: relative; right:50px;bottom: 60px;">Loaded with our signature spicy schezwan sauce, juicy schezwan chicken meatballs & 100% mozzarella cheese.</span>
+                        </div>
+                        <ul>
+                            <li class="list-group-item" style="font-size: 14px; font-weight: 450; color: black;position:relative; right: 30px;top: -20px;">Select your size & crust</li>
+                            <li class="list-group-item" style="background-color:lightgrey; margin-top: 10px;position: relative;text-align:left;padding-left: 5px; width: 200px;top: -25px; right: 30px;">Medium Pan</li>
+                        </ul>
+                        <p style="display: none;">Price: ₹539</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 28px; width: 105%;text-align: center; position: relative;bottom: 35px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 35px;">₹539</span>
+                    </button>
+                </div>
+                <div class="product" style="margin-top: 10px; width: 229px; height: 500px; border-radius: 0px; position: relative;right: 36px;margin-right: 10px;background-color: #fff;">
+                    <img src="./pizza-images/8.png" class="card-img-top" alt="..." style="width: 112%; position: relative; right: 12px;">
+                    <div class="card-body">
+                        <h5 class="card-title align-items-start t" style="position: relative;font-size: 17px; margin-top: 8px;margin-bottom: 40px;">Awesome American Cheesy Chicken</h5>
+                        <span class="tag ml-5" style="position: relative;left:125px;bottom: 63px;">NEW</span>
+                        <span class=" inline-flex align-middle">
+                            <span class="flex font-light mr-5"style="position: relative;left:295px;bottom: 89px;">
+                                <img src="https://www.pizzahut.co.in/order/images/icons/icon-non-veg-india.8b504def46b1471c0b39961124b6d58c.svg" style="position: relative;right: 170px; bottom:-23px;">
+                            </span>
+                        </span>
+                        <div class="row">
+                            <span class="card-text" style="font-size: 13.8px; font-weight: 400; color: grey;position: relative; right:50px;bottom: 75px;">Our divine peruvian flavoured cheesy sauce, topped with classic chicken pepperoni, cheese and chicken sausage black olives, spicy jalapeno and 100% mozzarella cheese, finished with a generous drizzle of texas garlic sauce.</span>
+                        </div>
+                        <ul>
+                            <li class="list-group-item" style="font-size: 14px; font-weight: 450; color: black;position:relative; right: 30px;top: -85px;">Select your size & crust</li>
+                            <li class="list-group-item" style="background-color:lightgrey; margin-top: 10px;position: relative;text-align:left;padding-left: 5px; width: 200px;top: -95px; right: 30px;">Medium Pan</li>
+                        </ul>
+                        <p style="display: none;">Price: ₹609</p>
+                    </div>
+                    <button class="add-to-cart" style="background-color: green;color: white;height: 28px; width: 105%;text-align: center; position: relative;bottom: 105px;right: 5px; border: none; border-radius: 5px;">
+                        <span>Add</span>
+                        <span class="w-auto" style="padding-left: 15px;position: relative;left: 35px;">₹609</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
